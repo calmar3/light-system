@@ -1,6 +1,6 @@
 ## Relazione
 
-Aprire il file `Paper.pdf`
+File: `Paper.pdf`
 
 ## Sistemi
 
