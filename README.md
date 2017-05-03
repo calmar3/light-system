@@ -12,21 +12,21 @@ File: `Paper.pdf`
 
 #### Sensori
 
-`sensors-system:` [https://github.com/calmar3/monitoring-system.git](https://github.com/calmar3/sensors-system.git)
+`sensors-system:` [https://github.com/calmar3/sensors-system.git](https://github.com/calmar3/sensors-system.git)
 
 #### Dashboard
 
-`dashboard:` [https://github.com/calmar3/monitoring-system.git](https://github.com/calmar3/dashboard.git)
+`dashboard:` [https://github.com/calmar3/dashboard.git](https://github.com/calmar3/dashboard.git)
 
-`dashboard-backend:` [https://github.com/calmar3/monitoring-system.git](https://github.com/calmar3/dashboard-backend.git)
+`dashboard-backend:` [https://github.com/calmar3/dashboard-backend.git](https://github.com/calmar3/dashboard-backend.git)
 
 #### Controllore locale
 
-`local-controller:` [https://github.com/calmar3/monitoring-system.git](https://github.com/valerioditinno/local-controller.git)
+`local-controller:` [https://github.com/calmar3/local-controller.git](https://github.com/valerioditinno/local-controller.git)
 
 #### Sistema monitoraggio traffico
 
-`traffic-system:` [https://github.com/calmar3/monitoring-system.git](https://github.com/calmar3/traffic-system.git)
+`traffic-system:` [https://github.com/calmar3/traffic-system.git](https://github.com/calmar3/traffic-system.git)
 
 
 
