@@ -1,0 +1,80 @@
+/////////////////////////////////HOW TO START PROJECT & USEFUL COMMANDS/////////////////////////////////////////////////
+
+Create compressed file:
+
+	tar -zcvf folder_name.tar.gz folder_name
+
+
+AWS
+
+1)	edit Security group and add your public_ip(http://checkip.amazonaws.com/)
+
+2)	sudo chmod 400 my_file.pem
+
+3)	ssh -i my_file.pem ec2-user@ip_aws_instance
+
+4)	scp -i my_file.pem compressed_file ec2-user@ip_aws_instance:/home/ec2-user
+
+5)	wget http://...........
+
+6)	sudo yum install java-1.8.0
+	sudo yum remove java-1.7.0-openjdk
+	
+7)	cat /proc/cpuinfo
+	cat /proc/meminfo
+	
+8)	nohup command &
+
+
+
+Decompress file:
+
+	tar -zxvf folder_name.tar.gz
+
+
+To start kafka(into the kafka main folder):
+
+1)	sudo bin/zookeeper-server-start.sh config/zookeeper.properties
+
+2)	sudo bin/kafka-server-start.sh config/first-broker-server.properties
+
+3)	sudo bin/kafka-server-start.sh config/second-broker-server.properties
+
+4)	bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic light_sensor_data
+
+5)	bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic lamp_data
+
+6)	bin/kafka-console-consumer.sh --bootstrap-server localhost:9093 --topic lamp_data
+
+7)	bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+
+
+To start sensors-system:
+
+1)	sudo service mongod start
+
+2)	java -jar -Dspring.config.location=/path_to_file/application.properties sensors-system.jar 
+
+
+
+NB: If TomCat doesnt want start:
+
+1)	sudo netstat -tulpn | grep :8080
+
+1)	sudo kill -9 PID
+
+
+To start Flink project
+
+1)	./bin/start-local.sh
+
+2)	./bin/flink run -c core.ControlApp /home/ec2-user/control-system/control-system.jar
+
+3)	./bin/stop-local.sh
+
+
+Find big file into your file-system:
+
+	sudo find / -type f -size +20000k -exec ls -lh {} \; 2> /dev/null | awk '{ print $NF ": " $5 }' | sort -nrk 2,2
+
+
